@@ -4,10 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name=viewportcontent=width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @media screen and (min-width: 720px) {
+            .head {
+                min-width: 600px;
+                width: 60%;
+                text-align: center;
+                background: #FF85AD;
+            }
+            .main {
+                min-width: 600px;
+                width: 60%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background: #FFB3D6
+            }
+            .end {
+                width: 60%;
+                min-width: 600px;
+                display: flex;
+                background: #FFB3D6
+            }
+            .all div {
+                margin: 0 auto;
+                margin-bottom: 10px;
+                padding: 10px;
+            }
+        }
+        
+        @media screen and (max-width: 720px) {
+            .head {
+                width: 100%;
+                text-align: center;
+                background: #FF85AD;
+            }
+            .all div {
+                margin: 0 auto;
+                margin-bottom: 5px;
+                padding: 5px;
+                box-sizing: border-box;
+            }
+            .description h1 {
+                font-size: 1em;
+            }
+            .description h4 {
+                font-size: 1px;
+            }
+            .main {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background: #FFB3D6
+            }
+            .end {
+                width: 100%;
+                display: flex;
+                background: #FFB3D6
+            }
+        }
+        
         body {
             margin: 0 auto;
             padding: 0;
@@ -15,19 +74,6 @@
         
         a {
             text-decoration: none;
-        }
-        
-        .all div {
-            margin: 0 auto;
-            margin-bottom: 10px;
-            padding: 10px;
-        }
-        
-        .head {
-            min-width: 600px;
-            width: 60%;
-            text-align: center;
-            background: #FF85AD;
         }
         
         .head h1 {
@@ -45,15 +91,6 @@
             width: 100%;
         }
         
-        .main {
-            min-width: 600px;
-            width: 60%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            background: #FFB3D6
-        }
-        
         .main h1 {
             width: 100%;
             color: white
@@ -62,13 +99,6 @@
         .main img {
             background: black;
             width: 32%;
-        }
-        
-        .end {
-            width: 60%;
-            min-width: 600px;
-            display: flex;
-            background: #FFB3D6
         }
         
         .end img {
